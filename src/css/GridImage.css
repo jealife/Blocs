@@ -1,0 +1,17 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.swiper {
+    width: 600px;
+    height: 300px;
+}
+
+img {
+    width: 350px;
+    height: 200px;
+    object-fit: cover;
+
+}

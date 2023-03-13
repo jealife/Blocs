@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta property="og:title" content=" JEaLiFe Pictures ">
+    <meta property="og:type" content="Portfolio">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Hero</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="src/css/hero.css">
+    <link rel="stylesheet" href="src/css/portfolio.css">
+    <link rel="stylesheet" href="src/css/menu.css">
+    <link rel="stylesheet" href="src/css/all.css">
+    <link rel="stylesheet" href="src/css/responsive.css">
+
+
+
+
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <script src="https://kit.fontawesome.com/0d5ce9c423.js" crossorigin="anonymous"></script>
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&family=Roboto+Flex:opsz,wght@8..144,100;8..144,300;8..144,500;8..144,700;8..144,900&display=swap"
+        rel="stylesheet" />
+
+</head>
+
+<body>
+    <div class="parent">
+        <div class="div1">
+            <div class="pictures"><img class="img" src="https://unsplash.it/200/201" alt="Profil pic" srcset=""></div>
+            <div class="infos">
+                <h1>JEALIFE</h1>
+                <br>
+                <cite>
+                    <span>
+                        Le code est mon pinceau, l'écran mon canevas,
+                        Où je crée des sites web, pour rendre le monde plus beau
+                    </span>
+                    <br>
+                    <span>
+                        Chaque ligne de code est une pierre à l'édifice,
+                        Qui forme un tout harmonieux, une expérience unique et bénéfique.
+                    </span>
+                </cite>
+                <br>
+                <div class="menu">
+                    <div class="porto-menu" id="menu">
+                        <div class="navigation">
+                            <span style="--i:0;--x:1;--y:0;">
+                                <ion-icon name="person-circle-outline" id="about"></ion-icon>
+                            </span>
+                            <span style="--i:1;--x:-1;--y:0;">
+                                <ion-icon name="albums-outline" id="pictures"></ion-icon>
+                            </span>
+                            <span style="--i:2;--x:0;--y:-1;">
+                                <ion-icon name="mail-outline" id="contact"></ion-icon>
+                            </span>
+                            <span style="--i:3;--x:0;--y:1;">
+                                <ion-icon name="browsers-outline"></ion-icon>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="div2">
+            <div class="portfo">
+                <H1>Portfolio</H1>
+            </div>
+        </div>
+        <div class="div3">
+            <div class="fill">
+
+            </div>
+            <div class="pictures">
+
+            </div>
+        </div>
+    </div>
+
+
+    <script src="" async defer></script>
+
+
+
+    <script>
+        $(document).ready(function () {
+            // $(".porto-menu").load("menu.html")
+            $(".fill").load("about.html")
+            $(".footer").load("footer.html")
+            $("#about").css("color", "aqua");
+            $(".about-fill").load("about.html")
+
+
+            $("#pictures").click(function () {
+                $(".fill").load("photos.html");
+                $("#web-site").css("color", "white");
+                $("#about").css("color", "white");
+                $("#logos").css("color", "white");
+                $(this).css("color", "aqua");
+                $(this).css("transition", "0.5s");
+
+            });
+
+
+            $("#web-site").click(function () {
+                $(".nav-bar").load("navBar.html")
+
+                $(".grid-wrapper").load("webSite.html");
+                $("#logos").css("color", "white");
+                $("#photos").css("color", "white");
+                $(this).css("color", "aqua");
+                $(this).css("transition", "0.5s");
+            });
+
+            $("#about").click(function () {
+                $(".fill").load("about.html");
+                $("#web-site").css("color", "white");
+                $("#photos").css("color", "white");
+                $(this).css("color", "aqua");
+                $(this).css("transition", "0.5s");
+            });
+
+        });
+    </script>
+
+    <script>
+        const navigation = document.querySelector(".navigation");
+
+        navigation.addEventListener("click", () => {
+            navigation.classList.toggle("active");
+        })
+    </script>
+
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+</body>
+
+</html>

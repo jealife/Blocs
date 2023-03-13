@@ -1,0 +1,13 @@
+.pic{
+    text-align: right;
+}
+.pic img {
+    width: 25vw;
+    border-radius: 12px;
+}
+.fill{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 3rem 3.5rem 0 3.5rem;
+}
